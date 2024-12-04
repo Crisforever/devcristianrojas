@@ -1,0 +1,190 @@
+<html>
+  <head>
+    <title>NFT Artist</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-links">
+        <a href="#"> Biography </a>
+        <a href="#"> Projects </a>
+        <a href="#"> Github </a>
+        <a href="#"> VSCO </a>
+      </div>
+      <a class="browse-gallery" href="#"> Contactar </a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="text">
+        <h1>
+          Cristian Rojas
+          <br />
+          Fullstack Developer
+        </h1>
+        <p>
+          cada dia sueño una nueva idea de proyecto, me despierto para
+          codificar, seguido aprendo sobre las nuevas tecnologias para
+          finalmente hacer un sitio web agradable. 💡
+        </p>
+      </div>
+      <div class="profile-photo"></div>
+    </div>
+    <div class="bio">
+      <div class="card">
+        <h2>Acerca de mi</h2>
+        <p>
+          Soy Cristian Rojas, apasionado por el desarrollo de aplicaciones web y
+          todo lo relacionado con la programación. Desde los 13 años he estado
+          explorando este fascinante mundo, adentrándome en áreas como la
+          ciberseguridad y el desarrollo de software. Me encanta crear sitios
+          web con interfaces modernas, adaptadas a las últimas tendencias en
+          diseño y tecnología.
+        </p>
+      </div>
+    </div>
+    <div class="skills">
+      <h2>I have worked with this</h2>
+      <div class="skill-list">
+        <div class="skill-item">
+          <h3>HTML</h3>
+        </div>
+        <div class="skill-item">
+          <h3>CSS</h3>
+        </div>
+        <div class="skill-item">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-item">
+          <h3>React</h3>
+        </div>
+        <div class="skill-item">
+          <h3>Git</h3>
+        </div>
+        <div class="skill-item">
+          <h3>Tailwind</h3>
+        </div>
+        <div class="skill-item">
+          <h3>Sass</h3>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <h2>here are my projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Cocktails Menu</h3>
+          <div>
+            <img src="./assets/project1.png" alt="Project 2" />
+          </div>
+          <p>
+            simple menu for a cocktail bar which can be used online through a QR
+            or direct link to the web to present it as a substitute menu.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <h3>Cocktails Menu</h3>
+          <div>
+            <img src="./assets/project2.png" alt="Project 2" />
+          </div>
+          <p>
+            simple menu for a cocktail bar which can be used online through a QR
+            or direct link to the web to present it as a substitute menu.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <h3>Cocktails Menu</h3>
+          <div>
+            <img src="./assets/project3.png" alt="Project 2" />
+          </div>
+          <p>
+            simple menu for a cocktail bar which can be used online through a QR
+            or direct link to the web to present it as a substitute menu.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <h3>Linktree</h3>
+          <div>
+            <img src="./assets/project4.png" alt="Project 2" />
+          </div>
+          <p>
+            inspiration from linktree to create a simple and easy to use
+            website, this is my linktree clone.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<div class="center">
+
+  <div class="contact-container">
+    <form id="contact-form" action="mailto:cristianrosas3003@gmail.com" method="POST" enctype="text/plain">
+      <h2 class="form-title">Contact Us</h2>
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            placeholder="ej: Cristian Rojas"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+          <input
+          type="email"
+            placeholder="myemail@domain.com"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+          id="message"
+          placeholder="ej: Hola, me gustaria contratar tus servicios, me gustaria que desarolles una web estilo moderna con un precio muy agradable !"
+          name="message"
+            class="form-textarea"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+    </div>
+  </div>    
+    
+    <div class="footer">
+      <p>© 2024 Cristian Rojas. Todos los derechos reservados.</p>
+    </div>
+    <div class="background-shapes">
+      <div class="shape square"></div>
+      <div class="shape square-small"></div>
+      <div class="shape square-medium"></div>
+    </div>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
